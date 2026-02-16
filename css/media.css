@@ -1,14 +1,52 @@
-
-    @media (max-width: 980px) {
+ @media (max-width: 980px) {
   .hamburger {
-    display: flex; /* Показываем бургер‑кнопку */
+    display: flex; 
+  }  .navigation {
+    display: none; 
   }
-  
-  .navigation {
-    display: none; /* Скрываем основное меню */
-  }
-   .header__action-block {
+  .header__action-block {
         display: none;
     }
+  @media (min-width:360px) {
+  .header__container {
+      padding-left: 16px;
+      padding-right: 8px;
+    }
+  }
+    @media   (max-width: 728px){
+
+  .logo img{
+     max-width: 48px;
+    height: 34px;
+  }
+}
+  .header {
+    height: 72px;
+  }
+    .header__container {
+      padding-left: 20px;
+    padding-right: 20px;
+    } 
 }
 
+     
+
+  
+
+@media (max-width:1024px) {
+   .navigation__list {
+      column-gap: 16px;
+    }
+    header__action-block  {
+      padding-left: 20px;
+      padding-right: 32px;
+    }
+    .header__container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  
+}
+
+
+ 
