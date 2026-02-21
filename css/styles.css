@@ -213,7 +213,7 @@ h1 {
 
 .with-emoji::before {
   content: "😊";
-  margin-right: 5px; 
+  margin-right: 5px;
  /*  vertical-align: middle; */
 }
 .filter-container {
@@ -261,6 +261,129 @@ h1 {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   box-sizing: border-box;
 }
+
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px; 
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; 
+ max-width: 100%;
+  /* height: 499px; */
+  
+}
+
+.grid-card {
+  width: 100%; 
+  max-height: 100%; 
+  border-radius: 8px;
+ /*  overflow: hidden; */
+ overflow: visible;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative; 
+  height: auto;
+  min-height: 499px;
+}
+
+.grid-card:hover {
+  transform: translateY(-3px);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+   height: 260px;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position:bottom;
+  
+}
+
+.card-tags {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 8px; 
+  max-width: 300px; 
+ 
+}
+
+.tag-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 8px;
+  background-color: #e9ecef;
+  border-radius: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.card-content {
+  padding: 16px;
+
+  
+}
+
+.card-title {
+  margin-top: 0;
+  font-size: 1em;
+  color: #212529;
+  margin-bottom: 5px;
+}
+
+.card-author {
+  margin: 4px 0 8px 16px;
+  color: #6c757d;
+  font-size: 0.8em;
+}
+
+.card-excerpt {
+  color: #495057;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display: -webkit-box; */
+  /* -webkit-line-clamp: 2; */ 
+  /* -webkit-box-orient: vertical; */
+  
+}
+
+.post-date {
+  padding: 4px 8px;
+  text-align: left;
+  font-size: 0.8em;
+  color: #495057;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2; 
+}
+
+.date-value {
+  display: inline-block;
+}
+

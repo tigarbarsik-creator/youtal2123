@@ -12,6 +12,10 @@
       padding-left: 16px;
       padding-right: 8px;
     }
+  
+     main {
+padding: 0 16px;
+     }
     h1 {
       padding-left: 15px;
     }
@@ -92,6 +96,75 @@
       padding-left: 20px;
     padding-right: 20px;
     } 
+}
+@media (max-width: 960px) {
+  .blog-grid {
+    grid-template-columns: 1fr; /* Одна колонка */
+    padding: 15px; /* Уменьшаем отступы */
+    gap: 24px;
+  }
+
+  .grid-card {
+    min-height: 599px; 
+    /* overflow-y: auto;  */
+
+  }
+
+  .card-image {
+    height: 404px; 
+  }
+
+  .card-content {
+    padding: 16px 16px 44px 16px; 
+  }
+
+  .card-excerpt {
+    -webkit-line-clamp: 4; 
+    margin-bottom: 30px; 
+    word-break: break-word;
+  }
+
+  .card-title {
+    font-size: 1.1em; 
+  }
+
+  .card-author {
+    margin: 4px 0 10px 12px;
+    font-size: 0.9em; 
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .grid-card {
+    min-height: auto;
+    
+  }
+
+  .card-image {
+   height: 20vw;
+  
+  }
+  .imagee  {
+    height: 206px;
+    max-width: 374px ;}
+
+
+  .card-excerpt {
+    /* -webkit-line-clamp: 3; */
+  }
+  .card-tags {
+    flex-wrap: wrap; 
+    gap: 4px; 
+  }
+  .card-image {
+    height: 206px;
+    margin-bottom: 16px; /* уменьшенный отступ на мобильных */
+  }
+  .card-content {
+    margin-top: 12px;
+  }
 }
 
      
