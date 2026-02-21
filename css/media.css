@@ -96,6 +96,9 @@ padding: 0 16px;
       padding-left: 20px;
     padding-right: 20px;
     } 
+    .card-content {
+      height: 274px;
+    }
 }
 @media (max-width: 960px) {
   .blog-grid {
@@ -183,8 +186,43 @@ padding: 0 16px;
       padding-left: 32px;
       padding-right: 32px;
     }
+    .card-content {
+      height: 253px;
+    }
   
 }
 
 
  
+/* При ширине до 980 px — 2 колонки (2 ряда) */
+@media (max-width: 980px) {
+  .flex-card {
+    flex: 1 0 calc(50% - 10px); /* 2 колонки с учётом gap */
+    min-width: 250px;
+  }
+/*   .flex-image {
+    height: 206px; 
+  } */
+}
+
+@media (max-width: 480px) {
+  .blog-flex {
+    gap: 12px;
+    padding: 12px;
+  }
+  .flex-card {
+    flex: 1 0 100%; 
+    min-width: auto;
+  }
+
+  .card-tags {
+    gap: 4px; 
+  }
+  .tag-item {
+    padding: 4px 6px;
+    font-size: 0.75em; 
+  }
+  .card-tags {
+    max-width: 200px;
+  }
+}
