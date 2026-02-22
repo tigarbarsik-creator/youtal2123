@@ -243,7 +243,14 @@ main {
 max-width: 1200px;
 margin: 0 auto;
 box-sizing: border-box;
+
 }
+
+
+
+
+   
+
 
 
 .blog-grid {
@@ -380,7 +387,6 @@ margin: 0 auto;
 .flex-card {
 flex: 1 0 calc(33.333% - 13.333px);
 min-width: 280px;
-/
 overflow: hidden;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 transition: transform 0.3s ease;
@@ -419,6 +425,14 @@ max-width: 100vh;
 .flex-card:hover {
 transform: translateY(-3px);
 }
+
+
+
+
+
+
+
+
 
 
 
